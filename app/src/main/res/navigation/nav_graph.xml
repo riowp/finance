@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.smartfinance.pro.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.smartfinance.pro.ui.transaction.TransactionFragment"
+        android:label="Transaksi"
+        tools:layout="@layout/fragment_transaction" />
+
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.smartfinance.pro.ui.budget.BudgetFragment"
+        android:label="Budget"
+        tools:layout="@layout/fragment_budget" />
+
+    <fragment
+        android:id="@+id/insightFragment"
+        android:name="com.smartfinance.pro.ui.insight.InsightFragment"
+        android:label="AI Insight"
+        tools:layout="@layout/fragment_insight" />
+
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.smartfinance.pro.ui.report.ReportFragment"
+        android:label="Laporan"
+        tools:layout="@layout/fragment_report" />
+
+</navigation>
